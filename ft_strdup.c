@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:54:09 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/01 10:44:42 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/17 12:55:40 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,4 @@ int	main(void)
 	printf("%s\n", hi);
 	free(hi);
 	return (0);
-}
- */
+} */

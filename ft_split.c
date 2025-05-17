@@ -6,11 +6,29 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 14:10:22 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/08 14:09:50 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/17 12:49:15 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_checkseperator(char const *s, char c)
+{
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			count++;
+		i++;
+	}
+	if (count > 0)
+		return (1);
+	return (0);
+}
 
 static void	free_array(char **arr, int count)
 {
@@ -75,9 +93,18 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
+	if (!ft_checkseperator(s, c))
+	{
+		dest = malloc(2 * sizeof(char *));
+		if (!dest)
+			return (NULL);
+		dest[0] = ft_strdup((char *)s);
+		dest[1] = NULL;
+		return (dest);
+	}
 	dest = malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
 	if (!dest)
-		return (NULL);	
+		return (NULL);
 	if (!fillarray(dest, s, c))
 		return (NULL);
 	return (dest);
@@ -88,7 +115,7 @@ char	**ft_split(char const *s, char c)
 int main()
 {
 	char *string = "      split       this for   me  !       ";
-	char **result = ft_split(string, ' ');
+	char **result = ft_split(string, '#');
 	printf("%s\n", result[0]);
 	printf("%s\n", result[1]);
 	printf("%s\n", result[2]);

@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:30:07 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:53:53 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 19:44:58 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (src[i] == (unsigned char) c)
-			return (&s[i]);
+			return ((void *)&src[i]);
 		i++;
 	}
 	return (0);

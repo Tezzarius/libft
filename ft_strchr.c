@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 11:41:35 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:51:53 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 19:46:11 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@ char	*ft_strchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == c)
-			return (s);
+			return ((char *)s);
 		s++;
 	}
 	if (!c)
-		return (s);
+		return ((char *)s);
 	return (0);
 }
 

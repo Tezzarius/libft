@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:18:54 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 19:05:04 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 19:45:18 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void	*dest, const void *src, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*d;
 	unsigned char	*s;
 

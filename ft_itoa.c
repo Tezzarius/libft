@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 10:54:35 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/17 13:01:28 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 19:16:23 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ static int	ft_dlen(int n)
 
 static char	*fillstr(int n)
 {
-	int		i;
-	int		len;
-	char	*fin;
+	size_t		i;
+	size_t		len;
+	char		*fin;
 
 	i = 0;
 	len = ft_dlen(n);

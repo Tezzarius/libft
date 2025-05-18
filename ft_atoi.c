@@ -6,21 +6,22 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 15:10:02 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:56:44 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 19:21:14 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	neg;
-	int	dest;
+	size_t	i;
+	size_t	neg;
+	size_t	dest;
 
 	i = 0;
 	neg = 1;
 	dest = 0;
-	while ((nptr[i] == ' ') || (nptr[i] == '\t') || (nptr[i] == '\n')
-		|| (nptr[i] == '\v') || (nptr[i] == '\f') || (nptr[i] == '\r'))
+	while ((nptr[i] == ' ') || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if ((nptr[i] == '+') || (nptr[i] == '-'))
 	{

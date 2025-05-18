@@ -6,11 +6,11 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 15:10:02 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/08 14:01:00 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 18:56:44 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *src)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	neg;
@@ -19,19 +19,19 @@ int	ft_atoi(char *src)
 	i = 0;
 	neg = 1;
 	dest = 0;
-	while ((src[i] == ' ') || (src[i] == '\t') || (src[i] == '\n')
-		|| (src[i] == '\v') || (src[i] == '\f') || (src[i] == '\r'))
+	while ((nptr[i] == ' ') || (nptr[i] == '\t') || (nptr[i] == '\n')
+		|| (nptr[i] == '\v') || (nptr[i] == '\f') || (nptr[i] == '\r'))
 		i++;
-	if ((src[i] == '+') || (src[i] == '-'))
+	if ((nptr[i] == '+') || (nptr[i] == '-'))
 	{
-		if (src[i] == '-')
+		if (nptr[i] == '-')
 			neg = -1;
 		i++;
 	}
-	while ((src[i] >= '0') && (src[i] <= '9'))
+	while ((nptr[i] >= '0') && (nptr[i] <= '9'))
 	{
 		dest = dest * 10;
-		dest = dest + (src[i] - '0');
+		dest = dest + (nptr[i] - '0');
 		i++;
 	}
 	return (dest * neg);

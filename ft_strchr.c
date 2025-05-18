@@ -6,11 +6,11 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 11:41:35 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/04/30 09:19:38 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 18:51:53 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{

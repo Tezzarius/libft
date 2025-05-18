@@ -6,32 +6,32 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 09:24:30 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/17 12:56:53 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 18:50:54 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlcat(char *dest, char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	destlen;
+	size_t	dstlen;
 	size_t	srclen;
 	size_t	i;
 
 	srclen = ft_strlen(src);
-	destlen = 0;
-	while (destlen < size && dest[destlen])
-		destlen++;
-	if (destlen == size)
-		return (destlen + srclen);
+	dstlen = 0;
+	while (dstlen < size && dst[dstlen])
+		dstlen++;
+	if (dstlen == size)
+		return (dstlen + srclen);
 	i = 0;
-	while (src[i] && (destlen + i + 1) < size)
+	while (src[i] && (dstlen + i + 1) < size)
 	{
-		dest[destlen + i] = src[i];
+		dst[dstlen + i] = src[i];
 		i++;
 	}
-	dest[destlen + i] = '\0';
-	return (destlen + srclen);
+	dst[dstlen + i] = '\0';
+	return (dstlen + srclen);
 }
 
 /* #include <stdio.h>

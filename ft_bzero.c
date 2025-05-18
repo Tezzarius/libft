@@ -6,23 +6,16 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:08:39 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/08 14:01:27 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 18:48:17 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *ptr, size_t num)
+void	*ft_bzero(void *s, size_t n)
 {
-	char	*p;
-
-	p = (char *) ptr;
-	while (num > 0)
-	{
-		p[num -1] = '\0';
-		num--;
-	}
-	return (ptr);
+	ft_memset(s, '\0', n);
+	return (s);
 }
 
 /* #include <stdio.h>

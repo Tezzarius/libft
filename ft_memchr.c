@@ -6,22 +6,22 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:30:07 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/03 10:44:21 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/18 18:53:53 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(void *src, int c, size_t len)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*s;
+	unsigned char	*src;
 	size_t			i;
 
 	i = 0;
-	s = (unsigned char *) src;
-	while (i < len)
+	src = (unsigned char *) s;
+	while (i < n)
 	{
-		if (s[i] == (unsigned char) c)
+		if (src[i] == (unsigned char) c)
 			return (&s[i]);
 		i++;
 	}
@@ -30,9 +30,9 @@ void	*ft_memchr(void *src, int c, size_t len)
 
 /* int main ()
 {
-	char *src = "/|\x12\xff\x09\0\x42\042\0\42|\\";
+	char *s = "/|\x12\xff\x09\0\x42\042\0\42|\\";
 	int size = 12;
 
-	ft_memchr(src, '\0', size);
+	ft_memchr(s, '\0', size);
 	return (0);
 } */

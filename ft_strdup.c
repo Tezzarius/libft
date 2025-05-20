@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:54:09 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:58:39 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:03:10 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char *hi = ft_strdup("Tabula Rasa");
-	printf("%s\n", hi);
-	free(hi);
-	return (0);
-} */

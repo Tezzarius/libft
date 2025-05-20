@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 14:10:22 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 19:13:51 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:02:58 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,18 +81,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (dest);
 }
-
-/* #include <stdio.h>
-
-int main()
-{
-	char *string = "      split       this for   me  !       ";
-	char **result = ft_split(string, ' ');
-	printf("%s\n", result[0]);
-	printf("%s\n", result[1]);
-	printf("%s\n", result[2]);
-	printf("%s\n", result[3]);
-	printf("%s\n", result[4]);
-	printf("%s\n", result[5]);
-	return (0);
-} */

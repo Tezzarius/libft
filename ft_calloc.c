@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 17:10:56 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:57:45 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:59:42 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, total);
 	return (ptr);
 }
-
-/* #include <stdio.h>
-#include <stdlib.h>
-
-int main() 
-{
-	int *ptr = (int *)calloc(5, 5);
-	printf("%d", ptr[3]);
-	free(ptr);
-	return (0);
-} */

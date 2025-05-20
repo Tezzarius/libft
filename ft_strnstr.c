@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 15:04:18 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:56:04 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:03:45 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-/* #include <stdio.h>
-
-int main()
-{
-	char *s1 = "A";
-	char *s2 = "FF";
-	size_t max = strlen(s1);
-	char *i2 = ft_strnstr(s1, s2, 20);
-	printf("%s", i2);
-	return (0);
-} */

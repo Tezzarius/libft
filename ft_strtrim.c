@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 11:05:50 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/08 14:17:38 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:03:56 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest[j] = '\0';
 	return (dest);
 }
-
-/* int main()
-{
-	char *s1 = "  \t \t \n   \n\n\n\t";
-	//char *s2 = "  \t \t \n Hello \t  Please\n Trim me ! \n\n\n\t";
-	ft_strtrim(s1, " \n\t");
-	return (0);
-} */

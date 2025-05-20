@@ -39,9 +39,8 @@ SRC = 	./ft_atoi.c\
 		./ft_strtrim.c\
 		./ft_substr.c\
 		./ft_tolower.c\
-		./ft_toupper.c
-
-BSRC =	./ft_lstadd_back_bonus.c\
+		./ft_toupper.c\
+		./ft_lstadd_back_bonus.c\
 		./ft_lstadd_front_bonus.c\
 		./ft_lstclear_bonus.c\
 		./ft_lstdelone_bonus.c\
@@ -53,8 +52,6 @@ BSRC =	./ft_lstadd_back_bonus.c\
 
 OBJ = $(SRC:.c=.o)
 
-BOBJ = $(BSRC:.c=.o)
-
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -63,15 +60,15 @@ $(NAME): $(OBJ)
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-bonus: $(OBJ) $(BOBJ)
-	ar rcs -o $(NAME) $(OBJ) $(BOBJ)
+bonus: $(OBJ)
+	ar rcs -o $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ) $(BOBJ) $
+	rm -f $(OBJ) $
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re

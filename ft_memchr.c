@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:30:07 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 19:44:58 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:01:57 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-/* int main ()
-{
-	char *s = "/|\x12\xff\x09\0\x42\042\0\42|\\";
-	int size = 12;
-
-	ft_memchr(s, '\0', size);
-	return (0);
-} */

@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:58:00 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:02:15 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:03:23 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char	*str = "0123456789";
-	char	dst[20] = "0";
-
-	printf("%d\n", ft_strlcpy(dst, str, 7));
-	printf("%s", dst);
-	return (0);
-} */

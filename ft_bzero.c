@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:08:39 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 18:48:17 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:59:35 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,3 @@ void	*ft_bzero(void *s, size_t n)
 	ft_memset(s, '\0', n);
 	return (s);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char	str[10] = "Test";
-	char	str2[10] = "Test";
-
-	ft_bzero(str, 5);
-	printf("FT: %s\n", str);
-	bzero(str2, 5);
-	printf("OG: %s\n", str2);
-	return (0);
-} */

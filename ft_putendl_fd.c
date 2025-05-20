@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 15:47:09 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/03 09:48:07 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:59:05 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
 	if (!s)
 		return ;
-	i = 0;
-	while (s[i])
-		write(fd, &s[i++], 1);
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

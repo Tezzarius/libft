@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:09:23 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/02 16:18:33 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:02:37 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ void	ft_putnbr_fd(int n, int fd)
 	c = (n % 10) + '0';
 	write(fd, &c, 1);
 }
-
-/* int main()
-{
-	int	n = 34567;
-
-	ft_putnbr_fd(n, 1);
-	return (0);
-} */

@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 11:41:35 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 19:46:11 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:03:04 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
-/* #include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char str[] = "";
-	char to_find = '\0';
-
-	printf("FT: %s\n", ft_strchr(str, to_find));
-	printf("OG: %s\n", strchr(str, to_find));
-	return (0);
-} */

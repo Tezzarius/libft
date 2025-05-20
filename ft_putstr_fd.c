@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 15:40:23 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/03 09:48:35 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 17:02:44 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
 	if (!s)
 		return ;
-	i = 0;
-	while (s[i])
-		write(fd, &s[i++], 1);
+	write(fd, s, ft_strlen(s));
 }
-
-/* int main()
-{
-	ft_putstr_fd("Hello", 1);
-	return (0);
-} */

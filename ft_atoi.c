@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 15:10:02 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/05/18 19:21:14 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/05/20 16:59:26 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (dest * neg);
 }
-
-/* #include <stdio.h>
-
-int main()
-{
-	printf("FT: %d\n", ft_atoi("+345fgh"));
-	printf("OG: %d\n\n", atoi("+345fgh"));
-	printf("FT: %d\n", ft_atoi("  -345fgh"));
-	printf("OG: %d\n\n", atoi("  -345fgh"));
-	printf("FT: %d\n", ft_atoi("--345fgh"));
-	printf("OG: %d\n", atoi("--345fgh"));
-	return (0);
-} */

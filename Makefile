@@ -48,7 +48,9 @@ SRC = 	./ft_atoi.c\
 		./ft_lstlast_bonus.c\
 		./ft_lstmap_bonus.c\
 		./ft_lstnew_bonus.c\
-		./ft_lstsize_bonus.c
+		./ft_lstsize_bonus.c\
+		./ft_printf.c\
+		./ft_printf_utils.c
 
 OBJ = $(SRC:.c=.o)
 

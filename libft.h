@@ -6,12 +6,16 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:56:49 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/06/05 09:55:26 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/06/05 15:26:47 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 # include <stdarg.h>
 # include <stdlib.h>
@@ -77,5 +81,7 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
+
+char	*get_next_line(int fd);
 
 #endif

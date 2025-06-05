@@ -50,7 +50,8 @@ SRC =	./ft_isalnum.c\
 		./ft_lstlast.c\
 		./ft_lstmap.c\
 		./ft_lstnew.c\
-		./ft_lstsize.c
+		./ft_lstsize.c\
+		./get_next_line.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 11:21:39 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/06/04 20:24:49 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/06/05 09:23:40 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,15 @@ static void	print_digit(unsigned long n, const char format)
 		base = "0123456789ABCDEF";
 	else
 		base = "0123456789abcdef";
-	ft_print_char(base[n % con]);
+	ft_printf_char(base[n % con]);
 }
 
-int	ft_print_hex(unsigned long n, const char format)
+int	ft_printf_hex(unsigned long n, const char format)
 {
 	unsigned int	i;
 
 	if (!n)
-		return (ft_print_number(n));
+		return (ft_printf_number(n));
 	print_digit(n, format);
 	i = 0;
 	while (n > 0)
@@ -49,7 +49,7 @@ int	ft_print_hex(unsigned long n, const char format)
 	return (i);
 }
 
-int	ft_print_number(int n)
+int	ft_printf_number(int n)
 {
 	int		i;
 	char	*fin;
@@ -64,7 +64,7 @@ int	ft_print_number(int n)
 	return (i);
 }
 
-int	ft_print_pointer(void *ptr)
+int	ft_printf_pointer(void *ptr)
 {
 	unsigned long	n;
 	int				i;
@@ -87,7 +87,7 @@ int	ft_print_pointer(void *ptr)
 	return (i);
 }
 
-int	ft_print_string(char *str)
+int	ft_printf_string(char *str)
 {
 	if (!str)
 	{

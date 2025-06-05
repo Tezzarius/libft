@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:56:49 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/06/04 20:23:52 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/06/05 09:23:46 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,11 +69,11 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-int		ft_print_char(int c);
-int		ft_print_hex(unsigned long n, const char format);
-int		ft_print_number(int n);
-int		ft_print_pointer(void *ptr);
-int		ft_print_string(char *str);
+int		ft_printf_char(int c);
+int		ft_printf_hex(unsigned long n, const char format);
+int		ft_printf_number(int n);
+int		ft_printf_pointer(void *ptr);
+int		ft_printf_string(char *str);
 int		ft_printf(const char *conv, ...);
 
 #endif

@@ -6,32 +6,32 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 12:31:11 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/06/04 20:24:56 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/06/05 09:23:12 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_print_char(int c)
+int	ft_printf_char(int c)
 {
 	return (write(1, &c, 1));
 }
 
-int	ft_check(va_list args, const char format)
+static int	ft_check(va_list args, const char format)
 {
 	int	i;
 
 	i = 0;
 	if (format == 'c')
-		i += ft_print_char(va_arg(args, int));
+		i += ft_printf_char(va_arg(args, int));
 	else if (format == 's')
-		i += ft_print_string(va_arg(args, char *));
+		i += ft_printf_string(va_arg(args, char *));
 	else if (format == 'p')
-		i += ft_print_pointer(va_arg(args, void *));
+		i += ft_printf_pointer(va_arg(args, void *));
 	else if (format == 'd' || format == 'i')
-		i += ft_print_number(va_arg(args, int));
+		i += ft_printf_number(va_arg(args, int));
 	else if (format == 'x' || format == 'X' || format == 'u')
-		i += ft_print_hex(va_arg(args, unsigned int), format);
+		i += ft_printf_hex(va_arg(args, unsigned int), format);
 	else if (format == '%')
 		i += write(1, "%", 1);
 	return (i);
@@ -56,7 +56,7 @@ int	ft_printf(const char *str, ...)
 			count += ft_check(args, str[i]);
 		}
 		else
-			count += ft_print_char(str[i]);
+			count += ft_printf_char(str[i]);
 		i++;
 	}
 	va_end(args);

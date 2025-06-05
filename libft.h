@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:56:49 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/06/05 09:32:51 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/06/05 09:55:26 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,8 @@ void	*ft_memset(void *s, int c, size_t n);
 
 int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);
-int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 int		ft_printf(const char *conv, ...);
 int		ft_printf_char(int c);

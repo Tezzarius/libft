@@ -37,7 +37,7 @@ SRC =	./ft_isalnum.c\
 		./ft_tolower.c\
 		./ft_toupper.c\
 		./ft_printf.c\
-		./ft_printf_utils.c
+		./ft_printf_utils.c\
 		./ft_putchar_fd.c\
 		./ft_putendl_fd.c\
 		./ft_putnbr_fd.c\
@@ -50,7 +50,7 @@ SRC =	./ft_isalnum.c\
 		./ft_lstlast.c\
 		./ft_lstmap.c\
 		./ft_lstnew.c\
-		./ft_lstsize.c\
+		./ft_lstsize.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,13 +6,13 @@
 /*   By: bschwarz <bschwarz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 15:30:28 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/07/22 15:32:50 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/07/22 15:55:38 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isspace(int c)
+int	ft_isspace(int c)
 {
-    if (c == ' ' || (c >= 9 && c <= 13))
-        return (1);
-    return (0);
+	if (c == ' ' || (c >= 9 && c <= 13))
+		return (1);
+	return (0);
 }

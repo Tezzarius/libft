@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlloutput_forward.c                             :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bschwarz <bschwarz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 11:10:07 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/07/21 13:55:12 by bschwarz         ###   ########.fr       */
+/*   Created: 2025/07/23 13:46:08 by bschwarz          #+#    #+#             */
+/*   Updated: 2025/07/23 13:48:14 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_dlloutput_forward(t_dll *tail)
+void	ft_free(char **array)
 {
-	t_dll	*curr;
+	int	i;
 
-	curr = tail;
-	while (curr != NULL)
-	{
-		ft_printf("%d\n", curr->content);
-		curr = curr->next;
-	}
+	i = -1;
+	while (array[++i])
+		free(array[i]);
+	free(array);
 }

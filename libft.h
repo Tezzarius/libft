@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 10:56:49 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/08/08 16:15:19 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/08/26 12:32:06 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 int		ft_printf(const char *conv, ...);
+void	ft_perror(const char *str);
 int		ft_printf_char(int c);
 int		ft_printf_hex(unsigned long n, const char format);
 int		ft_printf_number(int n);

@@ -40,6 +40,7 @@ SRC_MEM =		./mem/ft_bzero.c\
 				./mem/ft_memset.c
 
 SRC_PRINT =		./print/ft_printf.c\
+				./print/ft_perror.c\
 				./print/ft_putchar_fd.c\
 				./print/ft_putendl_fd.c\
 				./print/ft_putnbr_fd.c\

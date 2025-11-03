@@ -6,7 +6,7 @@
 /*   By: bschwarz <bschwarz@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 12:31:11 by bschwarz          #+#    #+#             */
-/*   Updated: 2025/10/28 15:50:09 by bschwarz         ###   ########.fr       */
+/*   Updated: 2025/10/28 16:03:07 by bschwarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ int	ft_printf(const char *str, ...)
 	if (str == NULL || !str)
 		return (-1);
 	va_start(args, str);
-	i = 0;
+	i = -1;
 	count = 0;
-	while (str[i])
+	while (str[++i])
 	{
 		if (str[i] == '%' && str[i + 1] != '\0')
 		{
@@ -57,7 +57,6 @@ int	ft_printf(const char *str, ...)
 		}
 		else
 			count += ft_printf_char(str[i]);
-		i++;
 	}
 	va_end(args);
 	return (count);
